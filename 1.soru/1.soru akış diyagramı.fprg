@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="tuvba"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-11-01 11:27:17 &#214;&#214;"/>
+        <attribute name="created" value="dHV2YmE7REVTS1RPUC1TUkhWR1NMOzIwMjItMTAtMzE7MDg6Mzc6MjUgw5ZTOzMxMDI="/>
+        <attribute name="edited" value="dHV2YmE7REVTS1RPUC1TUkhWR1NMOzIwMjItMTEtMDE7MTE6Mjc6MTcgw5bDljszOzMzMzU="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="sayi" type="Integer" array="False" size=""/>
+            <declare name="toplam" type="Integer" array="False" size=""/>
+            <assign variable="toplam" expression="0"/>
+            <for variable="sayi" start="1" end="999" direction="inc" step="1">
+                <if expression="sayi%3==0">
+                    <then>
+                        <assign variable="toplam" expression="toplam+sayi"/>
+                    </then>
+                    <else>
+                        <if expression="sayi%5==0">
+                            <then>
+                                <assign variable="toplam" expression="toplam+sayi"/>
+                            </then>
+                            <else/>
+                        </if>
+                    </else>
+                </if>
+            </for>
+            <output expression="toplam" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
